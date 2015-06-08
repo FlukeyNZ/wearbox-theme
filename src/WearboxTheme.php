@@ -17,6 +17,6 @@ class WearboxTheme extends Theme
      *
      * @var bool
      */
-    protected $admin = true;
+    protected $admin = false;
 
 }
