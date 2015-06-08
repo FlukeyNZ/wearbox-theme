@@ -1,0 +1,41 @@
+// Navbar
+.navbar {
+    margin-bottom: @line-height-computed/2;
+}
+
+// Tabs
+.nav-tabs {
+    margin-bottom: -5px;
+
+    > li {
+        margin-right: 2px;
+
+        &.active {
+            z-index: 1;
+
+            > a,
+            > a:hover,
+            > a:focus {
+                padding: 7px 21px 12px;
+                background: @inverse;
+            }
+        }
+
+        > a {
+            background-color: rgba(0, 0, 0, 0.015);
+
+            &:hover {
+                color: @nav-tabs-color;
+                background-color: rgba(0, 0, 0, 0.035);
+            }
+        }
+    }
+}
+
+// Tab content
+.tab-content {
+    border: none;
+    position: inherit;
+    background-color: @inverse;
+    border-radius: @nav-border-radius;
+}

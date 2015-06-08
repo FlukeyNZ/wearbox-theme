@@ -1,0 +1,47 @@
+//
+// Grid UI
+// --------------------------------------------------
+
+ul.grid {
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 0 !important;
+
+    ul, ol {
+        list-style: none;
+    }
+
+    li {
+        display: block !important;
+        position: inherit !important;
+        font-size: @btn-font-size-base - 1;
+
+        .icon {
+            margin-right: 3px;
+        }
+
+        .panel {
+            padding: 0 @padding-base-horizontal/4;
+            margin-bottom: @line-height-computed/3;
+
+            .buttons {
+                float: right;
+                display: none;
+            }
+
+            &:hover {
+                > .buttons {
+                    display: block;
+                }
+            }
+        }
+
+        &.dragged {
+            opacity: 0.5;
+        }
+
+        &.placeholder {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,46 @@
+//
+// Tree UI
+// --------------------------------------------------
+
+ul.tree {
+    padding-left: 0;
+    list-style: none;
+
+    ul, ol {
+        list-style: none;
+    }
+
+    li {
+        .panel {
+            padding-right: 4px;
+            margin-bottom: @line-height-computed/3;
+
+            .handle {
+                cursor: move;
+                margin-right: 5px;
+                background: @gray-lighter;
+                color: rgba(0, 0, 0, 0.2);
+            }
+
+            .buttons {
+                float: right;
+                display: none;
+            }
+
+            &:hover {
+                > .buttons {
+                    display: block;
+                }
+            }
+        }
+
+        &.dragged {
+            opacity: 0.5;
+            margin-bottom: @line-height-computed/3;
+        }
+
+        &.placeholder {
+            display: none;
+        }
+    }
+}

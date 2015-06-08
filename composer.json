@@ -1,0 +1,35 @@
+{
+    "name": "FlukeyNZ/wearbox-theme",
+    "type": "streams-addon",
+    "description": "The official public theme for Wearbox.",
+    "keywords": [
+        "theme",
+        "streams-platform",
+        "laravel"
+    ],
+    "homepage": "http://wearbox.co.nz/",
+    "version": "1.0.0",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tim Bourne",
+            "email": "tim@bourne.co.nz",
+            "homepage": "http://wearbox.co.nz/",
+            "role": "Owner"
+        }
+    ],
+    "support": {
+        "email": "tim@bourne.co.nz"
+    },
+    "autoload": {
+        "psr-4": {
+            "Wearbox\\WearboxTheme\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    },
+    "minimum-stability": "dev"
+}
